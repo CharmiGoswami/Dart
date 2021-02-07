@@ -1,0 +1,27 @@
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(new Application());
+}
+
+class Application extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new MaterialApp(
+      title: 'stateless widget',
+      home: new Scaffold(
+        body: new Container(
+          color: Colors.black,
+          child: new Container(
+            child: new Center(
+              child: new Text('This is my first flutter application', textDirection:TextDirection.ltr,style: TextStyle(fontWeight: FontWeight.bold,fontSize:20),),
+            ),
+            color: Colors.pinkAccent,
+            margin: const EdgeInsets.all(30.0),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
